@@ -16,74 +16,67 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/admin.css" />
   </head>
   <body>
     <main class="container">
-      <header class="row">
-        <img src="images/logo.png" alt="logo" width="100px" height="100px" />
-      </header>
+      <header class="row"></header>
       <section class="row">
-        <form action="" method="post">
-          <div class="card">
-            <div class="card-header">Login to System</div>
-            <div class="card-body">
-              <div class="form-group">
-                <label for="">Username</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  name="username"
-                  id="username"
-                  aria-describedby="helpId"
-                  placeholder="Username"
-                />
-                <small id="usernameHid" class="form-text text-muted"
-                  >Username is invalid</small
-                >
+        <div class="col-6 offset-3 mt-4">
+          <form action="" method="post">
+            <div class="card">
+              <div class="card-header">
+                <h2>Add new category</h2>
+              </div>
+              <div class="card-body">
                 <div class="form-group">
-                  <label for="">Password</label>
+                  <label for="categoryId">Category ID</label>
                   <input
-                    type="password"
+                    type="text"
                     class="form-control"
-                    name="password"
-                    id="password"
+                    name="categoryId"
+                    id="categoryId"
                     aria-describedby="helpId"
-                    placeholder="Password"
+                    placeholder="Category ID"
                   />
-                  <small id="passwordHid" class="form-text text-muted"
-                    >Password is invalid</small
+                  <small id="categoryIdHid" class="form-text text-muted"
+                    >Category is required</small
                   >
                 </div>
-                <div class="form-check">
-                  <label class="form-check-label">
-                    <input
-                      type="checkbox"
-                      class="form-check-input"
-                      name="rememberMe"
-                      id="rememberMe"
-                      value="true"
-                    />
-                    Remeber me
-                  </label>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    aria-describedby="nameHid"
+                    placeholder="Category Name"
+                  />
+                  <small id="nameHid" class="form-text text-muted"
+                    >Category name is required</small
+                  >
                 </div>
               </div>
+              <div class="card-footer text-muted">
+                <button class="btn btn-primary">
+                  <i class="fas fa-save"></i> Save
+                </button>
+                <button class="btn btn-success">List Category</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+              </div>
             </div>
-            <div class="card-footer text-muted">
-              <button class="btn btn-primary">Login</button>
-              <button class="btn btn-secondary">Reset</button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </section>
       <footer class="row"></footer>
     </main>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
